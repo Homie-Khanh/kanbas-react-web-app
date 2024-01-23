@@ -7,67 +7,66 @@
     <table>
         <tbody>
             <tr>
-                <td>
+                <td valign="top">
                     <ul>
                         <li><a href="/Kanbas/Account/Navigation/index.html">Account</a></li>
                         <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
                         <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
                         <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
                         <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                        <li><a href=#>History</a></li>
-                        <li><a href=#>Studio</a></li>
-                        <li><a href=#>Commons</a></li>
-                        <li><a href=#>Helps</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
+                        <li><a href="#">Helps</a></li>
                     </ul>
                 </td>
-                <td>
+                <td valign="top">
                     <ul>
                         <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
                         <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
                         <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
-                        <li><a href=#>Zoom Meetings</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
                         <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                        <li><a href=#>Quizzes</a></li>
+                        <li><a href="#">Quizzes</a></li>
                         <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                        <li><a href=#>People</a></li>
-                        <li><a href=#>Panopto Video</a></li>
-                        <li><a href=#>Discussions</a></li>
-                        <li><a href=#>Announcements</a></li>
-                        <li><a href=#>Pages</a></li>
-                        <li><a href=#>Files</a></li>
-                        <li><a href=#>Rubrics</a></li>
-                        <li><a href=#>Outcomes</a></li>
-                        <li><a href=#>Collaborations</a></li>
-                        <li><a href=#>Syllabus</a></li>
-                        <li><a href=#>Settings</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="#">Settings</a></li>
                     </ul>
                 </td>
-                <td>
+                <td valign="top">
                     <select>
                         <option>SpeedGrader</option>
-                    </select> <br/><br/>
-                
-                    <table border="1" width="100%"></table> <br/>
+                    </select> 
+                    <hr width="100%" align="left"/>
                 
                     <h3>Assignment Name</h3>
                     <input type="text"/> <br/><br/>
-                    <textarea cols="30" rows="10"></textarea> <br/><br/>
+                    <textarea cols="30" rows="5"></textarea> <br/><br/>
                 
-                    Points <br/>
-                    <input type="number"/><br/><br/>
+                    <label for="points_number">Points</label> <br/>
+                    <input id="points_number" type="number"/><br/><br/>
                 
-                    Assignment Group <br/>
-                    <select>
+                    <label for="assignment_group">Assignment Group</label> <br/>
+                    <select id="assignment_group">
                         <option>ASSIGNMENTS</option>
                     </select> <br/><br/>
                 
-                    Display Grade as <br/>
-                    <select>
+                    <label for="display_grade">Display Grade as</label> <br/>
+                    <select id="display_grade">
                         <option>Percentage</option>
                     </select> <br/><br/>
                 
-                    Submission Type <br/>
-                    <select>
+                    <label for="submission_type">Submission Type</label> <br/>
+                    <select id="submission_type">
                         <option>Online</option>
                     </select> <br/><br/>
                 
@@ -93,20 +92,20 @@
                     <label for="chkbox-fileupload">File Uploads</label> <br/><br/>
                 
                     Assign <br/>
-                    Assign to <br/>
-                    <input type="text"/> <br/><br/>
+                    <label for="assign_to">Assign to</label> <br/>
+                    <input id="assign_to" type="text"/> <br/><br/>
                 
-                    Due <br/>
-                    <input type="date"/> <br/><br/>
+                    <label for="due_date">Due</label> <br/>
+                    <input id="due_date" type="date"/> <br/><br/>
                 
-                    Available from <br/>
-                    <input type="date"/> <br/><br/>
+                    <label for="avail_from">Available from</label> <br/>
+                    <input id="avail_from" type="date"/> <br/><br/>
                 
-                    Until <br/>
-                    <input type="date"/> <br/><br/>
+                    <label for="until">Until</label> <br/>
+                    <input id="until" type="date"/> <br/><br/>
                 
                     <button><a href="/Kanbas/Courses/Assignments/screen.html">Cancel</a></button>
-                    <button><a href="/Kanbas/Courses/Assignments/screen.html">Save</a></button>                
+                    <button><a href="/Kanbas/Courses/Assignments/screen.html">Save</a></button>              
                 </td>
             </tr>
         </tbody>
