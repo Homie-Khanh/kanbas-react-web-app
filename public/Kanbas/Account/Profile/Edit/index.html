@@ -5,29 +5,51 @@
   </head>
   <body>
     <h1>Jose Annunziato</h1>
-    Name:* 
-    <input type="text"/>
-    Pronouns:
-    <select>
+    <label for="name">Name:*</label>
+    <input id="name" type="text"/>
+
+    <label for="pronouns">Pronouns:</label>
+    <select id="pronouns">
         <option>None</option>
     </select> <br/><br/>
-    Title:
-    <input type="text"/>
+
+    <label for="title">Title:</label>
+    <input id="title" type="text"/>
     
     <h2>Contact</h2>
-    No registered services, you can add some on the <a href=#>settings</a> pages
+    No registered services, you can add some on the <a href="#">settings</a> pages
 
     <h2>Contact</h2>
-    No registered services, you can add some on the <a href=#>settings</a> pages
+    No registered services, you can add some on the <a href="#">settings</a> pages
 
     <h2>Biography</h2>
     Faculty, Software Engineer, AI, Space, and renewables enthusiast.<br/>
-    <textarea cols="30" rows="10">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+    <textarea cols="60" rows="5">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
 
     <h2>Links</h2>
     <ul>
-        <li><a href=#>YouTube</a>  Links to an external site</li>
+        <li><a href="#">YouTube</a> <a href="#">Links to an external site</a></li>
     </ul>
 
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" value="YouTube"/></td>
+          <td><input type="text" value="https://www.youtube.com/"/></td>
+          <td><a href="#">Remove</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <button>Add Another Link</button> <br/>
+    <button>Cancel</button>
+    <button>Save Profile</button> <br/>
+    <button>Edit Profile</button>
+    <button>Cancel Editing</button>
   </body>
 </html>
