@@ -1,0 +1,75 @@
+/* screen.html */
+.flex-fill .module-reduce {
+    background-color: black;
+    color: white;
+}
+
+.flex-fill .module-reduce .module-reduce-header {
+    display: flex;
+}
+
+.flex-fill .module-reduce-left {
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.flex-fill .module-reduce-left i.fa-bars {
+    color: white;
+}
+
+.flex-fill .module-reduce-middle {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.flex-fill .module-reduce-right {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* sandwich.html */
+
+.wd-kanbas-navigation-reduce {
+    background-color: white;
+    list-style: none;
+    padding: 0px;  
+    margin: 0px;
+    width: 100%;
+}
+.wd-kanbas-navigation-reduce li {
+    display: flex;
+    padding: 10px;
+    font-size: 0.8em;  
+    text-align: left;
+}
+.wd-kanbas-navigation-reduce a {
+    color: red;
+    text-decoration: none;
+    float: right;
+    padding-left: 20px;
+    padding-top: 8px;
+    font-size: 1.2em;
+}
+.wd-kanbas-navigation-reduce i {
+    color: red;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.wd-kanbas-navigation-reduce i.fa-x {
+    color: black;
+    font-size: 1.5em;
+    float: left;
+}
+
+.wd-kanbas-navigation-reduce i.fa-chevron-down {
+    color: black;
+    font-size: 1.5em;
+    float: right;
+}
+
+/* .html */
