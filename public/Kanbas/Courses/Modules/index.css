@@ -30,3 +30,18 @@
 .wd-modules > li {
   margin-bottom: 20px;
 }
+
+.all-module-access {
+  float: right;
+  margin: 10px;
+}
+
+.all-module-access .module-button{
+  background-color: red;
+  color: white;
+}
+
+.all-module-access i.fa-ellipsis-v{
+  height: 20px;
+  margin-top: 5px;
+}
