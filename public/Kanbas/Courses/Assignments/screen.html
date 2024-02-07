@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-    <title>Grades</title>
-    <link rel="stylesheet" href="/Kanbas/style.css" />
-    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
-    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css"/>
+    <title>Assignments</title>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" rel="stylesheet"/>
   </head>
   <body>
-    <table width="100%">
+    <!-- <table style="padding: 0px; margin: 0px; border-spacing: 0px; display: block; box-sizing: unset">
         <tbody>
             <tr>
-                <td valign="top">
+                <td valign="top" >
                     <ul class="wd-kanbas-navigation">
                         <li style="padding: 0px; margin-bottom: 0px">
                           <a href="http://northeastern.edu" style="font-size: 20px">
@@ -48,7 +51,7 @@
                             <i class="fa-regular fa-circle-question"></i>Helps</a></li>
                       </ul> 
                 </td>
-                <td valign="top">
+                <td valign="top" style="padding-right: 10px; margin: 0px;">
                     <ul class="wd-navigation">
                         <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
                         <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
@@ -70,7 +73,7 @@
                         <li><a href="#">Settings</a></li>
                       </ul>
                 </td>
-                <td valign="top">
+                <td valign="top" class="col-10">
                     <input type="text" placeholder="Search for Assignments"/>
                     <button>Group</button>
                     <button>Assignment</button>
@@ -199,6 +202,201 @@
                 </td>
             </tr>
         </tbody>
-    </table>
+    </table>  -->
+    <div class="d-flex">
+        <div class="d-md-block">
+          <ul class="wd-kanbas-navigation">
+            <li style="padding: 0px; margin-bottom: 0px">
+              <a href="http://northeastern.edu" style="font-size: 20px">
+                <img src="/images/logo.png" style="height: 80px; width: 70px"/>
+              </a>
+            </li>
+            <li>
+              <a href="/Kanbas/Account/Profile/screen.html">
+                <i class="fa-regular fa-circle-user" style="color: white"></i>Account</a></li>
+            <li>
+              <a href="/Kanbas/Dashboard/screen.html">
+                <i class="fa fa-tachometer-alt"></i>Dashboard</a></li>
+            <li class="wd-active">
+              <a href="/Kanbas/Courses/Home/screen.html">
+                <i class="fa fa-book"></i>Courses</a></li>
+            <li>
+              <a href="/Kanbas/Calendar/index.html">
+                <i class="fa fa-calendar-days"></i>Calendar</a></li>
+            <li>
+              <a href="/Kanbas/Inbox/index.html">
+                <i class="fa fa-inbox"></i>Inbox</a></li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-clock"></i>History</a></li>
+            <li>
+              <a href="#">
+                <i class="fa fa-tv"></i>Studio</a></li>
+            <li>
+              <a href="#">
+                <i class="fa fa-right-from-bracket"></i>Commons</a></li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-circle-question"></i>Helps</a></li>
+          </ul>
+        </div>
+        <div class="d-md-block">
+          <ul class="wd-navigation">
+            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+            <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+        <div class="flex-fill">
+            <table>
+                <tbody>
+                    <tr>
+                        <td valign="top" class="col-10">
+                            <input type="text" placeholder="Search for Assignments"/>
+                            <button>Group</button>
+                            <button>Assignment</button>
+                            <select>
+                                <option>Edit Assignment Dates</option>
+                                <option>Assignment Group Weights</option>
+                                <option>Gradescope 1.3</option>
+                                <option>Commons Favorites</option>
+                            </select> <br/><br/>
+                        
+                            <hr width="100%" align="left"/>
+                        
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h3>ASSIGNMENTS 40% of Total</h3>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>Edit</option>
+                                                <option>SpeedGrader</option>
+                                                <option>Duplicate</option>
+                                                <option>Delete</option>
+                                                <option>Move To...</option>
+                                                <option>Send To...</option>
+                                                <option>Copy To...</option>
+                                                <option>Share to Commons</option>
+                                            </select> 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul>
+                                <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV + HTML</a> <br/>
+                                   <a href="#">Multiple Models</a> | Not available yet</li>
+                                <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS + BOOTSTRAP</a> <br/>
+                                    <a href="#">Multiple Models</a> | Not available yet</li>
+                                <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS + REACT</a> <br/>
+                                    <a href="#">Multiple Models</a> | Not available yet</li>
+                            </ul>
+                        
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h3>QUIZZES 10% of Total</h3>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>Edit</option>
+                                                <option>SpeedGrader</option>
+                                                <option>Duplicate</option>
+                                                <option>Delete</option>
+                                                <option>Move To...</option>
+                                                <option>Send To...</option>
+                                                <option>Copy To...</option>
+                                                <option>Share to Commons</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul>
+                                <li><a href="#">Q1 - HTML</a> <br/>
+                                    <a href="#">Multiple Models</a> | Not available yet</li>
+                                <li><a href="#">Q2 - CSS</a> <br/>
+                                    <a href="#">Multiple Models</a> | Not available yet</li>
+                                <li><a href="#">Q3 - JS,ES6</a> <br/>
+                                    <a href="#">Multiple Models</a> | Not available yet</li>
+                            </ul>
+                        
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h3>EXAMS 20% of Total</h3>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>Edit</option>
+                                                <option>SpeedGrader</option>
+                                                <option>Duplicate</option>
+                                                <option>Delete</option>
+                                                <option>Move To...</option>
+                                                <option>Send To...</option>
+                                                <option>Copy To...</option>
+                                                <option>Share to Commons</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul>
+                                <li><a href="#">Midterm</a> <br/>
+                                    <a href="#">Multiple Models</a> | Not available yet</li>
+                                <li><a href="#">Final</a> <br/>
+                                    <a href="#">Multiple Models</a> | Not available yet</li>
+                            </ul>
+                        
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h3>PROJECT 30% of Total</h3>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>Edit</option>
+                                                <option>SpeedGrader</option>
+                                                <option>Duplicate</option>
+                                                <option>Delete</option>
+                                                <option>Move To...</option>
+                                                <option>Send To...</option>
+                                                <option>Copy To...</option>
+                                                <option>Share `to Commons</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul>
+                                <li><a href="#">Project</a> <br/>
+                                    <a href="#">Multiple Models</a> | Not available yet</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
   </body>
 </html>
