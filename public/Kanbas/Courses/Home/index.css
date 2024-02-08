@@ -3,37 +3,37 @@
     margin-right: 10px; 
 }
 
-.flex-fill .module-reduce {
+.flex-fill .navbar {
     background-color: black;
     color: white;
 }
 
-.flex-fill .module-reduce .module-reduce-header {
+.flex-fill .navbar .navbar-header {
     display: flex;
 }
 
-.flex-fill .module-reduce-left {
+.flex-fill .navbar-left {
     padding: 10px;
     margin-top: 15px;
     text-align: center;
     text-decoration: none;
 }
 
-.flex-fill .module-reduce-left i.fa-bars {
+.flex-fill .navbar-left i.fa-bars {
     color: white;
 }
 
-.flex-fill .module-reduce-right i.fa-chevron-down {
+.flex-fill .navbar-right i.fa-chevron-down {
     color: white;
 }
 
-.flex-fill .module-reduce-middle {
+.flex-fill .navbar-middle {
     flex-grow: 1;
     text-align: center;
     padding: 10px;
 }
 
-.flex-fill .module-reduce-right {
+.flex-fill .navbar-right {
     padding: 10px;
     margin-top: 10px;
     text-align: center;
