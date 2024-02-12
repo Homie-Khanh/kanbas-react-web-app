@@ -1,0 +1,132 @@
+/* screen.html */
+.wd-navigation {
+    margin-right: 10px; 
+}
+
+.flex-fill .navbar {
+    background-color: black;
+    color: white;
+}
+
+.flex-fill .navbar .navbar-header {
+    display: flex;
+}
+
+.flex-fill .navbar-left {
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.flex-fill .navbar-left i.fa-bars {
+    color: white;
+}
+
+.flex-fill .navbar-right i.fa-chevron-down {
+    color: white;
+}
+
+.flex-fill .navbar-middle {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.flex-fill .navbar-right {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* sandwich.html */
+.sandwich-head {
+    color: black;
+    width: 100%;
+    float: right;
+    margin: 10px;
+}
+
+.sandwich-body .col {
+    color: red;
+    text-decoration: none;
+    margin: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sandwich-body a {
+    color: red;
+    text-decoration: none;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.sandwich-body i {
+    color: red;
+    font-size: 1.3em;
+}
+
+.sandwich-body i.fa-chevron-right {
+    color: black;
+    float: right;
+    font-size: 0.8em;
+    padding-top: 7px;
+}
+
+/* chevron.html */
+.chevron-head {
+    background-color: black;
+    color: white;
+}
+
+.chevron-head .chevron-head-header {
+    display: flex;
+}
+
+.chevron-head .chevron-head-left {
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.chevron-head .chevron-head-left i.fa-bars{
+    color: white;
+}
+
+.chevron-head .chevron-head-middle {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.chevron-head .chevron-head-right {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.chevron-head i.fa-x {
+    color: white;
+}
+
+.chevron-body {
+    background-color: white;
+}
+
+.chevron-body i {
+    color: red;
+    padding-left: 3px;
+}
+
+.chevron-body a {
+    color: red;
+    text-decoration: none;
+}
+
+.chevron-body i.fa-eye-slash {
+    color: lightgrey;
+    font-size: 0.8em;
+    padding-left: 8px;
+}
