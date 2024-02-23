@@ -68,7 +68,7 @@ function Courses() {
               <div>{pathname.split('/')[4]}</div>
             </div>
             <div className="navbar-right">
-            
+            <FaGlasses/>
             <button className="chevron" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
               <FaChevronDown/>
             </button>
