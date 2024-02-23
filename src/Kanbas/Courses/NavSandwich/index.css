@@ -1,0 +1,24 @@
+.wd-kanbas-navigation-sandwich {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.wd-kanbas-navigation-sandwich .wd-sandwich-list{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.wd-kanbas-navigation-sandwich .wd-sandwich-icon-label {
+    list-style-type: none;
+    text-decoration: none;
+    color: red;
+    text-decoration: none;
+}
+
+.wd-kanbas-navigation-sandwich .wd-sandwich-label {
+    list-style-type: none;
+    margin-left: 10px;
+    font-size: 1em;
+}

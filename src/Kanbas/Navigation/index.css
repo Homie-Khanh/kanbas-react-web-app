@@ -1,0 +1,57 @@
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    padding: 0px;  
+    margin: 0px;
+    width: 90px;
+}
+.wd-kanbas-navigation li {
+    padding: 10px;     
+    margin-bottom: 10px;
+    font-size: 0.8em;  
+    text-align: center;
+}
+.wd-kanbas-navigation li.logo {
+    padding: 0px;
+}
+.wd-kanbas-navigation li .wd-icon .nu-logo {
+    width: 80px;
+}
+.wd-kanbas-navigation li.wd-active {
+    background-color: white;
+}
+.wd-kanbas-navigation li.wd-active a {
+    color: red;
+}
+.wd-kanbas-navigation li.wd-active a .wd-icon {
+    color: red;
+}
+.wd-kanbas-navigation li.wd-active a .wd-label {
+    color: red;
+}
+.wd-kanbas-navigation li.wd-active a .wd-icon-account {
+    color: grey;
+}
+.wd-kanbas-navigation li.wd-active a .wd-label-account {
+    color: red;
+}
+.wd-kanbas-navigation li a {
+    color: red;
+    text-decoration: none;
+}
+.wd-kanbas-navigation li a .wd-icon {
+    color: red;
+    text-decoration: none;
+}
+.wd-kanbas-navigation li a .wd-label {
+    color: white;
+    text-decoration: none;
+}
+.wd-kanbas-navigation li a .wd-icon-account {
+    color: red;
+    text-decoration: none;
+}
+.wd-kanbas-navigation li a .wd-label-account {
+    color: white;
+    text-decoration: none;
+}

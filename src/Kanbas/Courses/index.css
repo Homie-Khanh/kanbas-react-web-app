@@ -1,0 +1,126 @@
+.course-display .course-display-heading{
+    font-size: 1.5em;
+    margin: 20px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    color: red;
+}
+/* 
+.course-display .course-display-heading .student-view-div .student-glass {
+    font-size: 0.8em;
+    margin: 5px;
+    border: 0px;
+}
+
+.course-display .course-display-heading .student-view-div .student-view-button {
+    font-size: 0.8em;
+    margin: 5px;
+} */
+
+/* Navbar */
+.navbar {
+    background-color: black;
+    color: white;
+}
+
+.navbar .navbar-header {
+    display: flex;
+}
+
+.navbar-left {
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar-left i.navbar-left-link {
+    color: white;
+}
+
+.navbar-right i.navbar-right-link {
+    color: white;
+}
+
+.navbar-middle {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar-right {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* sandwich */
+.sandwich {
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+
+.sandwich-list {
+    list-style-type: none;
+    text-align: left;
+    padding: 0px;
+    margin: 5px;
+}
+
+.sandwich-list a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.sandwich-list .sandwich {
+    text-decoration: none;
+    background-color: white;
+}
+
+.sandwich-list .sandwich .sandwich-icon {
+    text-decoration: none;
+    color: red;
+    margin-right: 8px;
+}
+
+.sandwich-list .sandwich .sandwich-label {
+    text-decoration: none;
+    list-style: none;
+    color: red;
+
+}
+
+/* chevron */
+.chevron {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+
+.chevron-list {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+    padding: 0px;
+    margin: 5px;
+}
+
+.chevron-list a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.chevron-list .chevron-icon{
+    color: red;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.chevron-list .chevron-label{
+    color: red;
+    margin-right: 8px;
+    text-decoration: none;
+    list-style-type: none;
+}

@@ -1,0 +1,15 @@
+.wd-button {
+    display: flex; 
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.wd-button .module-button {
+    color: white;
+    background-color: red;
+}
+
+.list-group-item .module-head {
+    font-weight: bold;
+}
