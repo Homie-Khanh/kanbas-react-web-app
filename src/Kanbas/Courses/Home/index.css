@@ -1,0 +1,53 @@
+.status-side {
+    margin-left: 20px;
+}
+
+.top-button {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.top-button .unpublish {
+    width: 50%;
+    margin-right: 2px;
+}
+
+.top-button .published {
+    width: 50%;
+    margin-left: 2px;
+    background-color: green;
+    color: white;
+}
+
+.status-list {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.status-list .status-button {
+    text-decoration: none;
+    width: 90%;
+    text-align: left;
+    list-style-type: none;
+}
+
+.status-list .status-button .status-icon .fs-2 {
+    height: 0.7em;
+    width: 0.7em;
+    margin-right: 10px;
+}
+
+.status-list .status-button .status-label {
+    font-size: 1.1em;
+}
+
+.to-do-list .to-do-item {
+    font-size: 1.1em;
+    margin: 30px;
+    color: red;
+}

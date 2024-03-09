@@ -1,0 +1,19 @@
+.assignment-heading {
+    display: flex;
+    margin-top: 10px;
+}
+
+.assignment-heading .assignment-button {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.assignment-heading .assignment-button .assignment-button {
+    color: white;
+    background-color: red;
+    margin-right: 0px;
+}
+
+.assignment-module-head {
+    font-weight: bold;
+}
