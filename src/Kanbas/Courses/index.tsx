@@ -91,7 +91,7 @@ function Courses() {
         <h1 className="course-display-heading">
         <HiMiniBars3 style={{ margin: "10px" }}/> {course?.name} {course?.number} {course?.section} {course?.semester} 
         <IoIosArrowForward style={{ color: "grey" }}/> <span className="page" style={{ color: "black"}}>{pathname.split('/')[4]}</span>
-        {/* <div className="student-view-div" style={{ marginLeft: "auto" }}>
+        {/* <div className="student-view-div" style={{ display: "flex"}}>
           <button className="student-view-button"> <FaGlasses className="student-glass"/>Student View</button>
         </div> */}
         </h1>
