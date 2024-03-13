@@ -1,4 +1,4 @@
-import { FaHome, FaCodeBranch, FaPlug, FaWindowRestore, FaRocket, FaPeopleArrows, FaBullhorn, FaMailBulk } from "react-icons/fa";
+// import { FaHome, FaCodeBranch, FaPlug, FaWindowRestore, FaRocket, FaPeopleArrows, FaBullhorn, FaMailBulk } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Chevrons() {

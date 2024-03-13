@@ -1,6 +1,6 @@
-import Dashboard from "../../Dashboard";
+// import Dashboard from "../../Dashboard";
 import Sandwiches from "./sandwich";
-import { courses } from "../../Database";
+// import { courses } from "../../Database";
 import { Link, useParams } from "react-router-dom";
 
 function Sandwich() {
