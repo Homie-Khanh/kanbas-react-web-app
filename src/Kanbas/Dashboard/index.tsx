@@ -16,17 +16,17 @@ function Dashboard(
     <div className="p-4 d-block">
       <h1>Dashboard</h1>    
       <h5>Course</h5>
-      <input value={course.name} className="form-control"
+      <input value={course.name} className="form-control" style={{ marginBottom: '5px'}}
              onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
-      <input value={course.number} className="form-control"
+      <input value={course.number} className="form-control" style={{ marginBottom: '5px' }}
              onChange={(e) => setCourse({ ...course, number: e.target.value }) } />
-      <input value={course.startDate} className="form-control" type="date"
+      <input value={course.startDate} className="form-control" type="date" style={{ marginBottom: '5px' }}
              onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
-      <input value={course.endDate} className="form-control" type="date"
+      <input value={course.endDate} className="form-control" type="date" style={{ marginBottom: '5px' }}
              onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />  
-      <input value={course.section} className="form-control"
+      <input value={course.section} className="form-control" style={{ marginBottom: '5px' }}
              onChange={(e) => setCourse({ ...course, section: e.target.value }) } />
-      <input value={course.semester} className="form-control"
+      <input value={course.semester} className="form-control" style={{ marginBottom: '5px' }}
              onChange={(e) => setCourse({ ...course, semester: e.target.value }) } />         
       <button type="button" className="btn btn-success" style={{ marginTop: '5px', marginRight: '2.5px' }} onClick={addNewCourse} >
         Add
@@ -47,26 +47,26 @@ function Dashboard(
                   <Link className="card-title" to={`/Kanbas/Courses/${course._id}/Home`}
                     style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
                     {course.name} 
-                    <span className="float-end">
-                      <button type="button" className="btn btn-secondary" style={{ marginLeft: '5px'}}
-                        onClick={(event) => {
-                        event.preventDefault();
-                        setCourse(course);
-                      }}>
-                        Edit
-                      </button>
-                      <button type="button" className="btn btn-danger" style={{ marginLeft: '5px'}}
-                        onClick={(event) => {
-                        event.preventDefault();
-                        deleteCourse(course._id);
-                      }}>
-                        Delete
-                      </button>
-                    </span>
                   </Link>
                   <p className="card-text">{course.name}</p>
                   <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-primary">
                     Go </Link>
+                  <span className="float-end">
+                    <button type="button" className="btn btn-secondary" style={{ marginLeft: '5px'}}
+                      onClick={(event) => {
+                      event.preventDefault();
+                      setCourse(course);
+                    }}>
+                      Edit
+                    </button>
+                    <button type="button" className="btn btn-danger" style={{ marginLeft: '5px'}}
+                      onClick={(event) => {
+                      event.preventDefault();
+                      deleteCourse(course._id);
+                    }}>
+                      Delete
+                    </button>
+                  </span>
                 </div>
               </div>
             </div>
