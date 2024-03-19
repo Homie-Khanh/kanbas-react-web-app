@@ -12,7 +12,7 @@ import { FaHome, FaCodeBranch, FaPlug, FaWindowRestore, FaRocket, FaPeopleArrows
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { pathname } = useLocation();
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
