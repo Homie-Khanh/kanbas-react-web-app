@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { courses } from "../../Kanbas/Database";
 import { Route, Routes, useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
@@ -12,10 +14,21 @@ import { FaHome, FaCodeBranch, FaPlug, FaWindowRestore, FaRocket, FaPeopleArrows
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function Courses({ courses }: { courses: any[]; }) {
+function Courses() {
   const { pathname } = useLocation();
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+
+  const COURSES_API = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState<any>({ _id: "" });
+  const findCourseById = async (courseId?: string) => {
+    const response = await axios.get(`${COURSES_API}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+  // const course = courses.find((course) => course._id === courseId);
+  
   const sandwichlinks = [
     { label: "Account",   icon: <FaRegUserCircle className="fs-2" />        },
     { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" />        },
