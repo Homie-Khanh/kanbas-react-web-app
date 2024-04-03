@@ -19,6 +19,7 @@ function Kanbas() {
     section: "01", semester: "FA23"
   });
   const COURSES_API = "http://localhost:4000/api/courses";
+  // const COURSES_API = "https://kanbas-node-server-app-zrdm.onrender.com/";
   const addNewCourse = async () => {
     const response = await axios.post(COURSES_API, course);
     setCourses([ ...courses, response.data ]);
@@ -62,7 +63,7 @@ function Kanbas() {
   //     })
   //   );
   // }; 
-  
+
   return(
   <Provider store={store}>
     <div className="d-flex">

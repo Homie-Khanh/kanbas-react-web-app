@@ -13,7 +13,7 @@ import {
 } from "./reducer";
 import { KanbasState } from "../../store";
 import * as client from "./client";
-import { findModulesForCourse, createModule } from "./client";
+// import { findModulesForCourse, createModule } from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
@@ -25,7 +25,7 @@ function ModuleList() {
   const [selectedModule, setSelectedModule] = useState(moduleList[0]);
 
   const handleAddModule = () => {
-    createModule(courseId, module).then((module) => {
+    client.createModule(courseId, module).then((module) => {
       dispatch(addModule(module));
     });
   };
@@ -34,16 +34,12 @@ function ModuleList() {
       dispatch(deleteModule(moduleId));
     });
   };
-  // const handleUpdateModule = async () => {
-  //   const status = await client.updateModule(module);
-  //   dispatch(updateModule(module));
-  // };
-  const handleUpdateModule = () => {
-    client.updateModule(module).then((status) => {
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
     dispatch(updateModule(module));
-  })};
+  };
   useEffect(() => {
-    findModulesForCourse(courseId)
+    client.findModulesForCourse(courseId)
       .then((modules) =>
         dispatch(setModules(modules))
     );
@@ -81,7 +77,7 @@ function ModuleList() {
             <button type="button" 
               className="btn btn-dark" style={{ marginTop: '5px', marginLeft: '2.5px' }}
               // onClick={() => dispatch(updateModule(module))}>
-              onClick={() => handleUpdateModule}>
+              onClick={handleUpdateModule}>
               Update
             </button>
           </span>
