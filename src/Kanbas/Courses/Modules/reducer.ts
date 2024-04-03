@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 // import { modules } from "../../Database";
 
-interface Module {
-  _id?: string;
-  name: string;
-  description: string;
-  course: string;
-  lessons: [];
-}
+// interface Module {
+//   _id?: string;
+//   name: string;
+//   description: string;
+//   course: string;
+//   lessons: [];
+// }
 const initialState = {
   // modules: modules,
-  // modules: [] as { _id: string; name: string; description: string }[],
-  modules: [] as Module[],
+  modules: [] as { _id: string; name: string; description: string }[],
+  // modules: [] as Module[],
   module: { name: "New Module 123", description: "New Description" },
 };
 
@@ -51,6 +51,6 @@ const modulesSlice = createSlice({
   },
 });
 
-export const { addModule, deleteModule, setModules,
+export const { setModules, addModule, deleteModule,
   updateModule, setModule } = modulesSlice.actions;
 export default modulesSlice.reducer;

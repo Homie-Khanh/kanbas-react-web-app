@@ -28,7 +28,7 @@ function Courses() {
     findCourseById(courseId);
   }, [courseId]);
   // const course = courses.find((course) => course._id === courseId);
-  
+
   const sandwichlinks = [
     { label: "Account",   icon: <FaRegUserCircle className="fs-2" />        },
     { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" />        },
@@ -77,7 +77,8 @@ function Courses() {
               </div>
             </div>
             <div className="navbar-middle">
-              <div>{course?.number} {course?.section} {course?.semester}</div>
+              {/* <div>{course?.number} {course?.section} {course?.semester}</div> */}
+              <div>{course?.number}</div>
               <div>{pathname.split('/')[4]}</div>
             </div>
             <div className="navbar-right">
@@ -102,7 +103,8 @@ function Courses() {
       </div>
       <div className="course-display d-none d-sm-none d-md-block">
         <h1 className="course-display-heading">
-        <HiMiniBars3 style={{ margin: "10px" }}/> {course?.name} {course?.number} {course?.section} {course?.semester} 
+        {/* <HiMiniBars3 style={{ margin: "10px" }}/> {course?.name} {course?.number} {course?.section} {course?.semester}  */}
+        <HiMiniBars3 style={{ margin: "10px" }}/> {course?.name} {course?.number}
         <IoIosArrowForward style={{ color: "grey" }}/> <span className="page" style={{ color: "black"}}>{pathname.split('/')[4]}</span>
         {/* <div className="student-view-div" style={{ display: "flex"}}>
           <button className="student-view-button"> <FaGlasses className="student-glass"/>Student View</button>
