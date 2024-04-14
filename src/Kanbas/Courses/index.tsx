@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { courses } from "../../Kanbas/Database";
 import { Route, Routes, useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
@@ -11,11 +13,24 @@ import { FaArrowAltCircleRight, FaBars, FaBook, FaChevronDown, FaGlasses, FaInbo
 import { FaHome, FaCodeBranch, FaPlug, FaWindowRestore, FaRocket, FaPeopleArrows, FaBullhorn, FaMailBulk } from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+const API_BASE = process.env.REACT_APP_API_BASE;
 
-function Courses({ courses }: { courses: any[]; }) {
+function Courses() {
   const { pathname } = useLocation();
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+
+  // const COURSES_API = "http://localhost:4000/api/courses";
+  const COURSES_API = `${API_BASE}/api/courses`;
+  const [course, setCourse] = useState<any>({ _id: "" });
+  const findCourseById = async (courseId?: string) => {
+    const response = await axios.get(`${COURSES_API}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+  // const course = courses.find((course) => course._id === courseId);
+
   const sandwichlinks = [
     { label: "Account",   icon: <FaRegUserCircle className="fs-2" />        },
     { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" />        },
@@ -64,7 +79,8 @@ function Courses({ courses }: { courses: any[]; }) {
               </div>
             </div>
             <div className="navbar-middle">
-              <div>{course?.number} {course?.section} {course?.semester}</div>
+              {/* <div>{course?.number} {course?.section} {course?.semester}</div> */}
+              <div>{course?.number}</div>
               <div>{pathname.split('/')[4]}</div>
             </div>
             <div className="navbar-right">
@@ -89,7 +105,8 @@ function Courses({ courses }: { courses: any[]; }) {
       </div>
       <div className="course-display d-none d-sm-none d-md-block">
         <h1 className="course-display-heading">
-        <HiMiniBars3 style={{ margin: "10px" }}/> {course?.name} {course?.number} {course?.section} {course?.semester} 
+        {/* <HiMiniBars3 style={{ margin: "10px" }}/> {course?.name} {course?.number} {course?.section} {course?.semester}  */}
+        <HiMiniBars3 style={{ margin: "10px" }}/> {course?.name} {course?.number}
         <IoIosArrowForward style={{ color: "grey" }}/> <span className="page" style={{ color: "black"}}>{pathname.split('/')[4]}</span>
         {/* <div className="student-view-div" style={{ display: "flex"}}>
           <button className="student-view-button"> <FaGlasses className="student-glass"/>Student View</button>
