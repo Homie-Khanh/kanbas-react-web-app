@@ -5,6 +5,7 @@ import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import Sandwich from "./Courses/NavSandwich";
 import Chevron from "./Courses/NavChevron";
+import Account from "./Account";
 // import * as db from "./Database";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -74,7 +75,7 @@ function Kanbas() {
         <div style={{ flexGrow: 1 }}>
           <Routes>
               <Route path="/" element={<Navigate to="Dashboard" />} />
-              <Route path="Account" element={<h1>Account</h1>} />
+              <Route path="Account/*" element={<Account />} />
               <Route path="Dashboard" element={
                 <Dashboard
                 courses={courses}
